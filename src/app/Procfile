@@ -1,1 +1,1 @@
-web: ionic serve --port $PORT --nobrowser --nilivereleod --noopen
+worker: ionic serve --port $PORT --nobrowser --nilivereleod --noopen
