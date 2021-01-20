@@ -1,20 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+
+<ion-header>
+   
+    
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+<form [formGroup]="formGroup">
+
+<ion-grid>
+    <ion-row>
+        <ion-col>
+            
+            <!-- <app-ca-button [placeholder]="'customBtn'" ></app-ca-button> -->
+        </ion-col>
+        <ion-col>
+            
+            <app-cancel-button></app-cancel-button>
+        </ion-col>
+        <ion-col>
+            
+           <app-submit-button></app-submit-button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            
+           <!-- <app-ca-input [placeholder]="'custom innput'" [type]="'text'" [parentFormGroup]="formGroup"[min]="4" [max]="10" ></app-ca-input> -->
+        </ion-col>
+        <ion-col>
+            
+           <app-password-input [parentFormGroup]="formGroup"></app-password-input>
+           
+        </ion-col>
+        <ion-col>
+            
+            <!-- <app-number-input></app-number-input> -->
+            
+         </ion-col>
+
+        
+    </ion-row>
+
+
+   
+</ion-grid>
+</form>
+
 </ion-content>

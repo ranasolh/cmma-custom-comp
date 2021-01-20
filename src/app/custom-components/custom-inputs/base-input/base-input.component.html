@@ -1,0 +1,11 @@
+<div [formGroup]="parentFormGroup">
+<ion-item>
+  <ion-label position="floating" > {{placeholder}}</ion-label>
+  <ion-input type="{{type}}"   formControlName="{{placeholder}}" required> </ion-input>
+    
+</ion-item>
+<p *ngIf=' name.errors?.required && name.touched ' >{{'HOME.required' | translate}}</p>
+   
+<p *ngIf="name.errors?.minlength" >{{'HOME.min' | translate}}{{min}} {{'HOME.character' | translate}}</p>
+<p *ngIf="name.errors?.maxlength" >{{'HOME.max' | translate}} {{max}} {{'HOME.character' | translate}}</p>
+</div>
