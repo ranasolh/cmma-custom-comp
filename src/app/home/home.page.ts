@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateConfigService } from '../translate-config.service';
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,12 @@ export class HomePage {
    
   }
 
+  ngOnInit() {
+    // Write your jquery code here
+    $(document).ready(function () {
+      alert("Hello from New to design")
+    });
+  }
   
 
 
