@@ -10,6 +10,15 @@ ion-item
    
 }  
 
+ion-label
+{
+    --highlight-color-focused: rgb(68, 0, 255) !important;
+    --highlight-color-valid :green !important;
+    --highlight-color-invalid :red !important;
+    
+
+}
+
 
 ion-item {
     --highlight-color-valid: green !important;
@@ -21,3 +30,15 @@ ion-item {
      color:red;
      font-size:18px ;
  }
+
+ *{
+    text-align: start;
+    unicode-bidi: plaintext;
+}
+
+ion-input
+{
+    text-align: start;
+    unicode-bidi: plaintext;
+
+}

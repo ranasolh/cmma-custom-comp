@@ -1,1 +1,9 @@
-<app-ca-input [placeholder]="'number'"  type="'number'"></app-ca-input>
+
+
+<app-ca-input 
+[placeholder]="'HOME.number' | translate"
+[type]="'number'"
+[parentFormGroup]="parentFormGroup"
+[min]="5"
+[max]="10"
+></app-ca-input>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { CaInputComponent } from '../ca-input/ca-input.component';
 
 @Component({
@@ -8,6 +9,8 @@ import { CaInputComponent } from '../ca-input/ca-input.component';
 })
 export class NumberInputComponent extends CaInputComponent {
 
+  @Input() parentFormGroup : FormGroup;
+  
   constructor() {  super();}
 
   ngOnInit() {}

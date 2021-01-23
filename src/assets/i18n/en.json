@@ -8,7 +8,8 @@
         "required" :"This field is required",
         "min" :"It must be at least  ",
         "max" :"It must be less than  ",
-        "character" :"character"
+        "character" :"character",
+        "number" :"number"
         
     }
 }
