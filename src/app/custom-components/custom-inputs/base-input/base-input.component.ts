@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor, FormControl, FormGroup, Validators } from '@angular/forms';
+declare var $: any;
 
 @Component({
   selector: 'app-base-input',
@@ -18,19 +19,31 @@ export class BaseInputComponent implements OnInit
    @Input()
    parentFormGroup : FormGroup;
    name:FormControl ;
-  " 'placeholder'" :FormControl =new FormControl('',Validators.required); 
-
+ 
  
 
-   ngOnInit(){
+   ngOnInit()
+   
+   {
+    window[this.placeholder]=new FormControl('',[Validators.required, Validators.minLength(this.min),Validators.maxLength(this.max)]);
+
+    console.log(this.placeholder);
+
   this.parentFormGroup.addControl(this.placeholder,
     // new FormControl(this.placeholder,[Validators.required, Validators.minLength(this.min),Validators.maxLength(this.max)]));
     this.name=new FormControl('',[Validators.required, Validators.minLength(this.min),Validators.maxLength(this.max)]));
-    this.parentFormGroup.addControl('name',this.name);
+    this.parentFormGroup.addControl(this.placeholder,this.name);
    
      console.log(this.placeholder);
 
+//      $( "#pas" ).mouseenter(function() {
+//        alert("mouse enter");
+//        (document.getElementById("pas") as HTMLTextAreaElement).value="";
+// ;    });
+
   }
+
+  
 
  
 

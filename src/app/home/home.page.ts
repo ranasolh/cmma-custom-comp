@@ -27,9 +27,9 @@ export class HomePage {
 
   ngOnInit() {
     // Write your jquery code here
-    $(document).ready(function () {
-      alert("Hello from New to design")
-    });
+    // $(document).ready(function () {
+    //   alert("Hello from New to design")
+    // });
   }
   
 
