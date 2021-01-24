@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { TranslateConfigService } from '../../translate-config.service';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MaterialModule} from '../../material/material.module' ;
+
 
 @Component({
   selector: 'app-custom-list',

@@ -15,7 +15,7 @@ import { TranslateConfigService } from './translate-config.service';
 
 
 
-import { MaterialModule } from 'src/app/material/material.module';
+
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -26,7 +26,7 @@ export function LanguageLoader(http: HttpClient) {
 
 
 @NgModule({
-  declarations: [AppComponent,MaterialModule],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, 
     FormsModule,
@@ -35,11 +35,11 @@ export function LanguageLoader(http: HttpClient) {
      AppRoutingModule,
      HttpClientModule,
      AppRoutingModule,
-     MaterialModule,
+    
      CommonModule,
     FormsModule,
     IonicModule,
-    MaterialModule,
+    
     ReactiveFormsModule,
    
    
@@ -64,7 +64,7 @@ export function LanguageLoader(http: HttpClient) {
   ],
   bootstrap: [AppComponent],
    exports:[ 
-     MaterialModule,
+     
     ReactiveFormsModule,
    MatFormFieldModule ,
     MatInputModule,
