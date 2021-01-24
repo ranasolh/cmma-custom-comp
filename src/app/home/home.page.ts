@@ -12,17 +12,17 @@ declare var $: any;
 })
 export class HomePage {
   formGroup : FormGroup;
-  selectedLanguage:string;
+  selectedLanguage="en";
  
   constructor(private formBuilder: FormBuilder,private translateConfigService: TranslateConfigService ,private translate: TranslateService) {
     this.formGroup = this.formBuilder.group({
       n: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(30)]]
     });
-    // this.selectedLanguage = this.translateConfigService.getDefaultLanguage();
-    this.selectedLanguage = translate.getBrowserCultureLang();
+   if(translate.getBrowserCultureLang())
+   { this.selectedLanguage = translate.getBrowserCultureLang();
     console.log(translate.getBrowserCultureLang());
     this.languageChanged();
-   
+   }
   }
 
   ngOnInit() {
