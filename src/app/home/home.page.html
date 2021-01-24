@@ -9,58 +9,48 @@
 <form [formGroup]="formGroup">
 
 <ion-grid>
+   
     <ion-row>
-        <ion-col>
-            
-            <!-- <app-ca-button [placeholder]="'customBtn'" ></app-ca-button> -->
-        </ion-col>
-        <ion-col>
-            
-            <app-cancel-button></app-cancel-button>
-        </ion-col>
-        <ion-col>
-            
-           <app-submit-button></app-submit-button>
-        </ion-col>
-    </ion-row>
-    <ion-row>
-        <ion-col>
+        <ion-col offset="4" size="3">
             
            <app-ca-input [placeholder]="'custom innput'" [type]="'text'" [parentFormGroup]="formGroup"[min]="4" [max]="10" ></app-ca-input>
         </ion-col>
-        <ion-col></ion-col>
-        <ion-col></ion-col>
+      
         
     </ion-row>
     <ion-row>
-        <ion-col>
+        <ion-col offset="4" size="3">
             
            <app-password-input [parentFormGroup]="formGroup"></app-password-input>
            
         </ion-col>
-        <ion-col>
-            
-           
-            
-         </ion-col>
-         <ion-col></ion-col>
-        
+      
         
     </ion-row>
+
+
     <ion-row>
-        <ion-col>
+        <ion-col offset="4" size="3">
             
             <app-number-input  [parentFormGroup]="formGroup"></app-number-input>
            
-        </ion-col>
-        <ion-col>
+        </ion-col> 
+    </ion-row>
+
+    <ion-row>
+        <ion-col offset="4" size="3">
             
+            <app-cancel-button></app-cancel-button>
            
+        </ion-col> 
+    </ion-row>
+
+    <ion-row>
+        <ion-col offset="4" size="3">
             
-         </ion-col>
-         <ion-col></ion-col>
-        
-        
+            <app-submit-button></app-submit-button>
+           
+        </ion-col> 
     </ion-row>
 
 
