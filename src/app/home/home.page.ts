@@ -12,7 +12,7 @@ declare var $: any;
 })
 export class HomePage {
   formGroup : FormGroup;
-  selectedLanguage="en";
+  selectedLanguage="en-us";
  
   constructor(private formBuilder: FormBuilder,private translateConfigService: TranslateConfigService ,private translate: TranslateService) {
     this.formGroup = this.formBuilder.group({
