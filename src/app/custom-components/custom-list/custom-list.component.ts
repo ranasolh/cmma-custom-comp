@@ -9,7 +9,7 @@ import { TranslateConfigService } from '../../translate-config.service';
 })
 export class CustomListComponent implements OnInit {
 
-  selectedLanguage:string;
+  selectedLanguage="en";
 
   constructor(private translateConfigService: TranslateConfigService ,private translate: TranslateService) { }
 

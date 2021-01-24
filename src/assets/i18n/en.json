@@ -9,7 +9,9 @@
         "min" :"It must be at least  ",
         "max" :"It must be less than  ",
         "character" :"character",
-        "number" :"number"
-        
+        "number" :"number" ,
+        "selectLanguage" :"select Language" ,
+        "arabic" :"Arabic" ,
+        "english" :"Engilsh"
     }
 }

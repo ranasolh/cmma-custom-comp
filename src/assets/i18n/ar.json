@@ -9,6 +9,9 @@
         "min" :"يجب ان يكون اكثر من  ",
         "max" :"يجب ان يكون اقل من",
         "character" :"احرف" ,
-        "number" :"رقم"
+        "number" :"رقم",
+        "selectLanguage" :"اختر اللغة" ,
+        "arabic" :"عربي" ,
+        "english" :"انكليزي"
     }
 }

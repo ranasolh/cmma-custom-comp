@@ -1,9 +1,9 @@
 <ion-list>
   <ion-item>
-    <ion-label>Select Language</ion-label>
+    <ion-label>{{'HOME.selectLanguage' | translate}}</ion-label>
     <ion-select placeholder="Select One" [(ngModel)]="selectedLanguage" (ionChange)="languageChanged()">
-      <ion-select-option value="en">English</ion-select-option>
-     <ion-select-option value="ar">Arabic</ion-select-option>
+      <ion-select-option value="en">{{'HOME.english' | translate}}</ion-select-option>
+     <ion-select-option value="ar">{{'HOME.arabic' | translate}}</ion-select-option>
     </ion-select>
   </ion-item>
 </ion-list>
