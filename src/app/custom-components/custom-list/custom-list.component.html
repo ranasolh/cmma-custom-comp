@@ -1,9 +1,21 @@
-<ion-list>
-  <ion-item>
-    <ion-label>{{'HOME.selectLanguage' | translate}}</ion-label>
-    <ion-select placeholder="Select One" [(ngModel)]="selectedLanguage" (ionChange)="languageChanged()">
+
+  
+    <!-- <div class="input-field col s12">
+    <ion-select placeholder="Select One" [(ngModel)]="selectedLanguage" (ionChange)="languageChanged()" interface="popover">
+      <ion-select-option value="">{{'HOME.selectLanguage' | translate}}</ion-select-option>
       <ion-select-option value="en">{{'HOME.english' | translate}}</ion-select-option>
      <ion-select-option value="ar">{{'HOME.arabic' | translate}}</ion-select-option>
     </ion-select>
-  </ion-item>
-</ion-list>
+  </div> -->
+
+<!-- <div class="input-field col s12">
+  <select [(ngModel)]="selectedLanguage" onChange="this.languageChanged()">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="en">{{'HOME.english' | translate}}</option>
+    <option value="ar">{{'HOME.arabic' | translate}}</option>
+  </select>
+
+</div> -->
+<!-- <mat-autocomplete>
+
+</mat-autocomplete> -->
