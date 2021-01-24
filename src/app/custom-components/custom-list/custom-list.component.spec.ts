@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CustomTextBoxComponent } from './custom-text-box.component';
+import { CustomListComponent } from './custom-list.component';
 
-describe('CustomTextBoxComponent', () => {
-  let component: CustomTextBoxComponent;
-  let fixture: ComponentFixture<CustomTextBoxComponent>;
+describe('CustomListComponent', () => {
+  let component: CustomListComponent;
+  let fixture: ComponentFixture<CustomListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomTextBoxComponent ],
+      declarations: [ CustomListComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CustomTextBoxComponent);
+    fixture = TestBed.createComponent(CustomListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

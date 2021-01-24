@@ -1,0 +1,9 @@
+ion-button
+{
+    width:200px;
+    height:40px;
+    --background:green !important;
+    --border-radius: 50px;
+ 
+
+}

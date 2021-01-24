@@ -8,7 +8,12 @@ ion-item
     --highlight-color-invalid :red !important;
     
    
-}  
+} 
+
+ion-button[type="submit"]
+{
+    color:green !important;
+}
 
 ion-label
 {

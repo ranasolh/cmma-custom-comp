@@ -14,9 +14,10 @@ import { PasswordInputComponent } from '../custom-components/custom-inputs/passw
 import { CaInputComponent } from '../custom-components/custom-inputs/ca-input/ca-input.component';
 import { NumberInputComponent } from '../custom-components/custom-inputs/number-input/number-input.component';
 import { BaseInputComponent } from '../custom-components/custom-inputs/base-input/base-input.component';
-import { CustomTextBoxComponent } from '../custom-components/custom-text-box/custom-text-box.component';
-import { CustomInputComponent } from '../custom-components/shared/custom-input/custom-input.component';
+
+
 import { TranslateModule } from '@ngx-translate/core';
+import { CustomListComponent } from '../custom-components/custom-list/custom-list.component';
 
 
 @NgModule({
@@ -30,8 +31,7 @@ import { TranslateModule } from '@ngx-translate/core';
   
   ],
   declarations: [HomePage,BaseButtonComponent,CaButtonComponent,CancelButtonComponent,SubmitButtonComponent,
-  PasswordInputComponent ,CaInputComponent,NumberInputComponent ,BaseInputComponent ,CustomTextBoxComponent,
- CustomInputComponent
+  PasswordInputComponent ,CaInputComponent,NumberInputComponent ,BaseInputComponent ,CustomListComponent
 ]
 })
 export class HomePageModule {}

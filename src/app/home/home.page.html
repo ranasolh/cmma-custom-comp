@@ -9,11 +9,20 @@
 <form [formGroup]="formGroup">
 
 <ion-grid>
+
+    <ion-row>
+        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
+            
+          <app-custom-list> </app-custom-list>
+        </ion-col>
+      
+        
+    </ion-row>
    
     <ion-row>
         <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
             
-           <app-ca-input [placeholder]="'custom innput'" [type]="'text'" [parentFormGroup]="formGroup"[min]="4" [max]="10" ></app-ca-input>
+           <app-ca-input [placeholder]="'custom input'" [type]="'text'" [parentFormGroup]="formGroup"[min]="4" [max]="10" ></app-ca-input>
         </ion-col>
       
         

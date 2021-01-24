@@ -9,9 +9,11 @@ import { BaseButtonComponent } from '../base-button/base-button.component';
 export class CaButtonComponent  extends BaseButtonComponent
 {
    @Input() placeholder:string ; 
-
+   @Input() color:string;
+   @Input() icon:string;
+ 
   constructor() { super(); }
 
   ngOnInit() {}
 
-}
+} 
