@@ -1,4 +1,4 @@
-<ion-list>
+<!-- <ion-list>
   <ion-item>
     <ion-label>{{'HOME.selectLanguage' | translate}}</ion-label>
     <ion-select placeholder="Select One" [(ngModel)]="selectedLanguage" (ionChange)="languageChanged()" interface="popover">
@@ -7,7 +7,7 @@
      <ion-select-option value="ar">{{'HOME.arabic' | translate}}</ion-select-option>
     </ion-select>
   </ion-item>
-</ion-list>
+</ion-list> -->
 
 <!-- <div class="input-field col s12">
   <select ngModel [(ngModel)]="selectedLanguage" (Change)="languageChanged()">
@@ -17,3 +17,15 @@
   </select>
 
 </div> -->
+
+<mat-form-field appearance="fill">
+  <mat-label>{{'HOME.selectLanguage' | translate}}</mat-label>
+  <mat-select placeholder="Select One"  [(ngModel)]="selectedLanguage"  >
+    <mat-option value="">{{'HOME.selectLanguage' | translate}}</mat-option>
+    <mat-option value="en">{{'HOME.english' | translate}}</mat-option>
+    <mat-option value="ar">{{'HOME.arabic' | translate}}</mat-option>
+    
+  </mat-select>
+</mat-form-field>
+
+

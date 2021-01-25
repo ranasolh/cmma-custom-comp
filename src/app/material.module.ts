@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
@@ -30,7 +30,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatButtonModule} from '@angular/material/button'
-
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from "@angular/platform-browser";
 
 @NgModule({
   exports: [
@@ -40,10 +41,10 @@ import {MatButtonModule} from '@angular/material/button'
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-  
     MatSelectModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+   
   ]
 })
 export class MaterialModule {}

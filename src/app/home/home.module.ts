@@ -14,7 +14,7 @@ import { PasswordInputComponent } from '../custom-components/custom-inputs/passw
 import { CaInputComponent } from '../custom-components/custom-inputs/ca-input/ca-input.component';
 import { NumberInputComponent } from '../custom-components/custom-inputs/number-input/number-input.component';
 import { BaseInputComponent } from '../custom-components/custom-inputs/base-input/base-input.component';
-
+import {SharedModule} from '../shared.module' ;
 
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -28,7 +28,7 @@ import { TranslateModule } from '@ngx-translate/core';
     HomePageRoutingModule,
     ReactiveFormsModule,
     TranslateModule ,
-    
+    SharedModule
   
   ],
   declarations: [HomePage,BaseButtonComponent,CaButtonComponent,CancelButtonComponent,SubmitButtonComponent,

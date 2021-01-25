@@ -13,9 +13,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateConfigService } from './translate-config.service';
 import { MaterialModule } from './material.module';
 import { CommonModule } from '@angular/common';
-
-
-
+import {SharedModule} from  '../app/shared.module' ;
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 export function LanguageLoader(http: HttpClient) {
@@ -26,17 +25,19 @@ export function LanguageLoader(http: HttpClient) {
 
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [],
+  entryComponents: [ ],
   imports: [
     BrowserModule, 
     FormsModule,
     ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
     MaterialModule,
-   
+    SharedModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -52,7 +53,7 @@ export function LanguageLoader(http: HttpClient) {
     providers: [
     StatusBar,
     SplashScreen,
-   
+    
      TranslateConfigService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

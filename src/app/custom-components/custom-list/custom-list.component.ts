@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateConfigService } from '../../translate-config.service';
-
+import {SharedModule} from '../../shared.module' ;
 
 
 @Component({
