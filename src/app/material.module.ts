@@ -44,6 +44,7 @@ import { BrowserModule } from "@angular/platform-browser";
     MatSelectModule,
     MatPaginatorModule,
     MatSortModule,
+    MatAutocompleteModule
    
   ]
 })

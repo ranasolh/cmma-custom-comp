@@ -10,7 +10,7 @@
 </ion-list> -->
 
 <!-- <div class="input-field col s12">
-  <select ngModel [(ngModel)]="selectedLanguage" (Change)="languageChanged()">
+  <select ngModel [(ngModel)]="selectedLanguage" (change)="languageChanged()">
     <option value="" disabled selected>Choose your option</option>
     <option value="en">{{'HOME.english' | translate}}</option>
     <option value="ar">{{'HOME.arabic' | translate}}</option>
@@ -18,14 +18,28 @@
 
 </div> -->
 
-<!-- <mat-form-field appearance="fill">
+<mat-form-field appearance="fill">
   <mat-label>{{'HOME.selectLanguage' | translate}}</mat-label>
-  <mat-select placeholder="Select One"    >
+  <mat-select placeholder="Select One"  [(ngModel)]="selectedLanguage"  (selectionChange)="languageChanged()"  >
     <mat-option value="">{{'HOME.selectLanguage' | translate}}</mat-option>
     <mat-option value="en">{{'HOME.english' | translate}}</mat-option>
     <mat-option value="ar">{{'HOME.arabic' | translate}}</mat-option>
     
   </mat-select>
+</mat-form-field>
+
+
+<!-- <mat-form-field class="example-full-width">
+  <mat-label>Number</mat-label>
+  <input type="text"
+         placeholder="Pick one"
+         aria-label="Number"
+         matInput
+         [formControl]="myControl"
+         [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of options" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
 </mat-form-field> -->
-
-
