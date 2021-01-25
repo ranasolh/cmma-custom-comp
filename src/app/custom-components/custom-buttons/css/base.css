@@ -3,17 +3,20 @@ ion-button
 {
     width:200px;
     height:40px;
-    --background:grey !important;
+    
     --border-radius: 50px;
  
 
 }
 
-ion-button[type="submit"]
-{
-    --background:green!important;
+
+ion-button.grey {
+    --background:grey;
 }
 
+ion-button.green {
+    --background:rgb(47, 226, 47);
+}
 
 
 * {

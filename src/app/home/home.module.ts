@@ -17,7 +17,7 @@ import { BaseInputComponent } from '../custom-components/custom-inputs/base-inpu
 
 
 import { TranslateModule } from '@ngx-translate/core';
-import { CustomListComponent } from '../custom-components/custom-list/custom-list.component';
+
 
 
 @NgModule({
@@ -27,11 +27,12 @@ import { CustomListComponent } from '../custom-components/custom-list/custom-lis
     IonicModule,
     HomePageRoutingModule,
     ReactiveFormsModule,
-    TranslateModule 
+    TranslateModule ,
+    
   
   ],
   declarations: [HomePage,BaseButtonComponent,CaButtonComponent,CancelButtonComponent,SubmitButtonComponent,
-  PasswordInputComponent ,CaInputComponent,NumberInputComponent ,BaseInputComponent ,CustomListComponent
+  PasswordInputComponent ,CaInputComponent,NumberInputComponent ,BaseInputComponent
 ]
 })
 export class HomePageModule {}

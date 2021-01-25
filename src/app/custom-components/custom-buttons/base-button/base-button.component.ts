@@ -10,8 +10,17 @@ export class BaseButtonComponent implements OnInit {
   @Input() data:string;
   @Input() icon:string;
   @Input() color:string;
+  btncolor:string;
+  issubmit=false;
 
-  constructor() { }
+  constructor() {  
+    if(this.color==="green")
+    {
+      this.issubmit=true;
+      console.log("sdfghhhhhhhhhhhhhhhhhhhhhhhhhhhhjfhd");
+      console.log(this.issubmit);
+    }
+  }
 
   ngOnInit() {
 
