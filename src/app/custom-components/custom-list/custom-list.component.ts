@@ -16,11 +16,13 @@ export class CustomListComponent implements OnInit {
 
   constructor(private translateConfigService: TranslateConfigService ,private translate: TranslateService)
    {
-      this.languageChanged();
+      // this.languageChanged();
 
     }
 
-  ngOnInit() { this.languageChanged();}
+  ngOnInit() {
+    //  this.languageChanged();
+    }
   
   languageChanged(){
     console.log(this.selectedLanguage);
