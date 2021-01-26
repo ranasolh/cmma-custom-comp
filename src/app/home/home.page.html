@@ -27,6 +27,12 @@
             (newlang)="langchange($event)" [options]="options"></app-custom-autocomplete> -->
 
         </ion-col>
+        <ion-col>
+              <app-custom-autocomplete ngDefaultControl 
+            [(ngModel)]="selectedLanguage" [ngModelOptions]="{standalone: true}" 
+            (newlang)="langchange($event)" [options]="options"></app-custom-autocomplete>
+
+        </ion-col>
       
         
     </ion-row>
