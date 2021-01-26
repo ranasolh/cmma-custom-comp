@@ -4,7 +4,7 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "postinstall": "bower install && grunt build",
+   
     "ng": "ng",
     "start": "ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
     "build": "node --max_old_space_size=2048 node_modules/.bin/ng build ",
