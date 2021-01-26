@@ -12,17 +12,14 @@ declare var $: any;
 })
 export class HomePage {
   formGroup : FormGroup;
-  selectedLanguage="en-us";
+  selectedLanguage="en";
+  options={"":"HOME.selectLanguage" ,"en":"HOME.english" , "ar":"HOME.arabic"}
  
   constructor(private formBuilder: FormBuilder,private translateConfigService: TranslateConfigService ,private translate: TranslateService) {
     this.formGroup = this.formBuilder.group({
       n: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(30)]]
     });
-   if(translate.getBrowserCultureLang())
-   { this.selectedLanguage = translate.getBrowserCultureLang();
-    console.log(translate.getBrowserCultureLang());
-    this.languageChanged();
-   }
+    this.translateConfigService.setLanguage(this.selectedLanguage);
   }
 
   ngOnInit() {
@@ -34,9 +31,16 @@ export class HomePage {
   
 
 
-  languageChanged(){
-    console.log(this.selectedLanguage);
-    this.translateConfigService.setLanguage(this.selectedLanguage);
-  }
+  // languageChanged(){
+  //   console.log(this.selectedLanguage);
+  //   this.translateConfigService.setLanguage(this.selectedLanguage);
+  // }
+
+  langchange(event1)
+   {
+     
+      this.selectedLanguage=event1;
+      this.translateConfigService.setLanguage(this.selectedLanguage);
+   }
 
 }

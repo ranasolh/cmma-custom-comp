@@ -20,10 +20,14 @@
 
 <mat-form-field appearance="fill">
   <mat-label>{{'HOME.selectLanguage' | translate}}</mat-label>
-  <mat-select placeholder="Select One"  [(ngModel)]="selectedLanguage"  (selectionChange)="languageChanged()"  >
-    <mat-option value="">{{'HOME.selectLanguage' | translate}}</mat-option>
-    <mat-option value="en">{{'HOME.english' | translate}}</mat-option>
-    <mat-option value="ar">{{'HOME.arabic' | translate}}</mat-option>
+  <mat-select placeholder="Select One"  #lang (selectionChange)='langChanged(lang.value)'  >
+    <!-- <mat-option value="">{{'HOME.selectLanguage' | translate}}</mat-option>
+    <mat-option value="en">{{this.option | translate}}</mat-option>
+    <mat-option value="ar">{{'HOME.arabic' | translate}}</mat-option> -->
+
+    <mat-option *ngFor="let k of this.keys" [value]="k">
+      {{this.options[k] | translate}}
+    </mat-option>
     
   </mat-select>
 </mat-form-field>

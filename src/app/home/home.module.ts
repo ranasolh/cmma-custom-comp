@@ -32,7 +32,8 @@ import { TranslateModule } from '@ngx-translate/core';
   
   ],
   declarations: [HomePage,BaseButtonComponent,CaButtonComponent,CancelButtonComponent,SubmitButtonComponent,
-  PasswordInputComponent ,CaInputComponent,NumberInputComponent ,BaseInputComponent
+  PasswordInputComponent ,CaInputComponent,NumberInputComponent ,BaseInputComponent,
+  
 ]
 })
 export class HomePageModule {}

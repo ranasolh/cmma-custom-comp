@@ -1,0 +1,18 @@
+<mat-form-field class="example-full-width">
+  
+  
+  <input type="text"
+         
+         aria-label="Number"
+         matInput
+         #lang
+         (click)='langChanged(lang.value)'
+         (change)='langChanged(lang.value)'
+         [matAutocomplete]="auto">
+
+  <mat-autocomplete  #auto="matAutocomplete" >
+    <mat-option *ngFor="let k of this.keys" [value]="k">
+      {{this.options[k] | translate}}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
