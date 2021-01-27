@@ -13,18 +13,14 @@
     <ion-row>
         <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
             
-          <!-- <app-custom-list  ngDefaultControl 
-            [(ngModel)]="selectedLanguage" [ngModelOptions]="{standalone: true}" 
-            (newlang)="langchange($event)" [options]="options" > </app-custom-list> -->
+          
 
             <app-custom-select ngDefaultControl 
             [(ngModel)]="selectedLanguage" [ngModelOptions]="{standalone: true}" 
             (newlang)="langchange($event)" [options]="options" ></app-custom-select>
 
 
-            <!-- <app-custom-autocomplete ngDefaultControl 
-            [(ngModel)]="selectedLanguage" [ngModelOptions]="{standalone: true}" 
-            (newlang)="langchange($event)" [options]="options"></app-custom-autocomplete> -->
+           
 
         </ion-col>
         <ion-col>
