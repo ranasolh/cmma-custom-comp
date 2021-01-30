@@ -9,12 +9,14 @@ import { TranslateConfigService } from 'src/app/translate-config.service';
 })
 export class CustomSelectComponent implements OnInit {
 
-  @Output() newlang = new EventEmitter<string>();
-  selectedLanguage="en";
-  keys;
-  @Input() option="HOME.english" ;
+  @Output() optionselectedChange = new EventEmitter<string>();
+  @Input() optionselected ;
   @Input() options:any;
 
+
+  selectedLanguage="en";
+  keys;
+ 
   constructor(private translateConfigService: TranslateConfigService ,private translate: TranslateService) { }
 
   ngOnInit()
@@ -27,17 +29,14 @@ export class CustomSelectComponent implements OnInit {
     console.log(Object.keys(this.options));
    }
 
-   languageChanged(){
-    console.log(this.selectedLanguage);
-    this.translateConfigService.setLanguage(this.selectedLanguage);
-  }
 
 
   langChanged(lang)
   {
-    console.log(lang);
-   
-    this.newlang.emit(lang);
-   
+    console.log("lang",lang);
+     this.optionselected=lang;
+     console.log("option" ,this.optionselected);
+    this.optionselectedChange.emit(this.optionselected);
+    console.log("done");
   }
 }

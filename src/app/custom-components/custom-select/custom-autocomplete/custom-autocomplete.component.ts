@@ -1,5 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 import { TranslateConfigService } from 'src/app/translate-config.service';
 
 @Component({
@@ -8,35 +11,49 @@ import { TranslateConfigService } from 'src/app/translate-config.service';
   styleUrls: ['./custom-autocomplete.component.scss'],
 })
 export class CustomAutocompleteComponent implements OnInit {
-  @Output() newlang = new EventEmitter<string>();
-  selectedLanguage="en";
-  keys;
-  @Input() option="HOME.english" ;
+  @Output() defaultChange = new EventEmitter<string>();
+  @Input()  default:string ="en";
   @Input() options:any;
+
+ 
+  myControl = new FormControl();
+  filteredOptions: Observable<string[]>;
+  
+  keys;
 
   constructor(private translateConfigService: TranslateConfigService ,private translate: TranslateService) { }
 
   ngOnInit()
    {
-    console.log("Ononit");
-    console.log(this.options);
+   
     this.keys=Object.keys(this.options);
-    console.log(this.keys);
-    console.log(this.options);
-    console.log(Object.keys(this.options));
+   
+    
+
+
+    this.filteredOptions = this.myControl.valueChanges
+      .pipe(
+        startWith(''),
+        map(value => this._filter(value))
+      );
+    
    }
 
-   languageChanged(){
-    console.log(this.selectedLanguage);
-    this.translateConfigService.setLanguage(this.selectedLanguage);
+   private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+     
+    return this.keys.filter(option => option.toLowerCase().includes(filterValue));
   }
+
+ 
 
 
   langChanged(lang)
   {
-    console.log(lang);
-   
-    this.newlang.emit(lang);
+    console.log("lang",lang);
+    this.default=lang;
+    console.log("default",this.default);
+    this.defaultChange.emit(this.default);
    
   }
 

@@ -27,7 +27,32 @@
 
 
 ion-item {
-    --highlight-color-valid: green;
-    --highlight-color-invalid: red;
-    --highlight-color-focused: var(--ion-color-light);
+    --highlight-color-valid: green !important;
+    --highlight-color-invalid:red !important;
+    --highlight-color-focused: blue !important;
+   
+  }
+  ion-item.item-has-focus > ion-label{
+    color: rgb(0, 68, 255) !important;
+  }
+
+  .item-interactive.item-has-focus{
+    --highlight-background: blue !important;
+  }
+
+  .item-interactive.ion-invalid{
+    --highlight-background:red !important;
+  }
+
+  
+  .item-interactive.ion-valid{
+    --highlight-background:green!important;
+  }
+
+  .item-interactive.ion-valid > ion-label{
+    color:green !important;
+  }
+  
+  .ion-item.ion-invalid > ion-label{
+    color:red !important;
   }

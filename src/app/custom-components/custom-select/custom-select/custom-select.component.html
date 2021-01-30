@@ -1,9 +1,9 @@
 
 <mat-form-field appearance="fill">
   <mat-label>{{'HOME.selectLanguage' | translate}}</mat-label>
-  <mat-select placeholder="Select One"  #lang (selectionChange)='langChanged(lang.value)'  >
+  <mat-select placeholder="Select One"  #lang    >
   
-    <mat-option *ngFor="let k of this.keys" [value]="k">
+    <mat-option *ngFor="let k of this.keys" [value]="k" (click)='langChanged(lang.value)'>
       {{this.options[k] | translate}}
     </mat-option>
     

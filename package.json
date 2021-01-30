@@ -4,16 +4,11 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-   
     "ng": "ng",
-    "start": "ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
-    "build": "node --max_old_space_size=2048 node_modules/.bin/ng build ",
-    "test": "ng test",
+    "start": "ng",
+    "build": "ng build ",
     "lint": "ng lint",
     "e2e": "ng e2e"
-  },
-  "engines": {
-    "node": "^15.3.0"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +34,8 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "@types/jquery": "^3.5.5",
     "@types/node": "^12.11.1",
+    "auto-bind": "^4.0.0",
+    "autobind-decorator": "^2.4.0",
     "codelyzer": "^6.0.0",
     "jquery": "^3.5.1",
     "rxjs": "~6.5.5",

@@ -3,17 +3,19 @@ ion-item
     color:grey;
     font-size: 20px;
     font-family: 'Lato', 'Arial', sans-serif;
-    --highlight-color-focused: rgb(68, 0, 255) !important;
+    /* --highlight-color-focused: blue !important;
     --highlight-color-valid :green !important;
     --highlight-color-invalid :red !important;
-    
+     */
    
 } 
 
 
-ion-label
+
+
+/* ion-label
 {
-    --highlight-color-focused: rgb(68, 0, 255) !important;
+    --highlight-color-focused: blue !important;
     --highlight-color-valid :green !important;
     --highlight-color-invalid :red !important;
     
@@ -25,7 +27,7 @@ ion-item {
     --highlight-color-valid: green !important;
     --highlight-color-invalid: red  !important;
     --highlight-color-focused: blue !important;
-  }
+  } */
 
  p{
      color:red;
@@ -43,3 +45,4 @@ ion-input
     unicode-bidi: plaintext;
 
 }
+

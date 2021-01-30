@@ -16,21 +16,30 @@
           
 
             <app-custom-select ngDefaultControl 
-            [(ngModel)]="selectedLanguage" [ngModelOptions]="{standalone: true}" 
-            (newlang)="langchange($event)" [options]="options" ></app-custom-select>
+            [(optionselected)]="selectedLanguage"
+            (optionselectedChange)= "langchange($event)" [options]="options"
+            
+            ></app-custom-select>
 
 
            
 
         </ion-col>
-        <ion-col>
-              <app-custom-autocomplete ngDefaultControl 
-            [(ngModel)]="selectedLanguage" [ngModelOptions]="{standalone: true}" 
-            (newlang)="langchange($event)" [options]="options"></app-custom-autocomplete>
-
-        </ion-col>
+       
       
         
+    </ion-row>
+    <ion-row>
+        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
+            <app-custom-autocomplete ngDefaultControl 
+            [(default)] ="this.selectedLanguage"
+          (defaultChange)= "langchange($event)" [options]="options"
+         
+          
+          ></app-custom-autocomplete>
+
+      </ion-col>
+
     </ion-row>
    
     

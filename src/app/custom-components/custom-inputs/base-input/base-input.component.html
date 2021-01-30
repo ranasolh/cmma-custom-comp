@@ -1,14 +1,27 @@
 <div [formGroup]="parentFormGroup">
 <ion-item>
   <ion-label position="floating" > {{placeholder}}</ion-label>
-  <ion-input  clearInput id="{{type}}"  type="{{type}}"   formControlName="{{type}}" required 
-  onclick="this.type=='password'?this.value='':this.value=this.value"
+  <ion-input   id="{{type}}"  type="{{type}}"   formControlName="{{type}}" required 
+  onclick="this.type=='password'?this.value='':this.value=this.value ;"
+  (click)="alerterror()"
+  [type]=" ismyTextFieldType && this.type =='password' ? 'text' : this.type "
+   ></ion-input>
+ 
+ 
+ 
   
-  > </ion-input>
-    
+  <ion-icon
+    [name]="ismyTextFieldType ? 'eye-off' : 'eye'"
+    slot="end" *ngIf="this.type=='password'"
+    (click)="togglemyPasswordFieldType()"
+  >
+  </ion-icon>
+
+
+
+  
 </ion-item>
-<p *ngIf=' name.errors?.required && name.touched ' >{{'HOME.required' | translate}}</p>
+<p *ngIf=' name.errors?.required && name.touched '>{{'HOME.required' | translate}}</p>
    
 <p *ngIf="name.errors?.minlength" >{{'HOME.min' | translate}}{{min}} {{'HOME.character' | translate}}</p>
 <p *ngIf="name.errors?.maxlength" >{{'HOME.max' | translate}} {{max}} {{'HOME.character' | translate}}</p>
-</div>

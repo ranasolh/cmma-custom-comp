@@ -1,0 +1,17 @@
+{
+    "HOME": {
+        "title": "Ionic 4 Multi Language Translation",
+        "text": "This is random text to show translation in application",
+        "submit" :"Submit",
+        "cancel" :"Cancel" ,
+        "password" :"Password" ,
+        "required" :"This field is required",
+        "min" :"It must be at least  ",
+        "max" :"It must be less than  ",
+        "character" :"character",
+        "number" :"number" ,
+        "selectLanguage" :"select Language" ,
+        "arabic" :"Arabic" ,
+        "english" :"English"
+    }
+}
