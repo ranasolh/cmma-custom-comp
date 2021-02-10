@@ -1,0 +1,56 @@
+{
+    "HOME": {
+        "name" :"الاسم" ,
+        "currentTheme":"rtl",
+        "title": "Ionic 4 Multi Language Translation",
+        "text": "مرحبا كيف الحال",
+        "submit" :"تم",
+        "cancel" :"الغ" ,
+        "password" :"كلمة السر" ,
+        "required" :"هذاالحقل مطلوب ",
+        "min" :"يجب ان يكون اكثر من  ",
+        "max" :"يجب ان يكون اقل من",
+        "character" :"احرف" ,
+        "number" :"رقم",
+        "selectLanguage" :"اختر اللغة" ,
+        "arabic" :"عربي" ,
+        "english" :"انكليزي",
+        "french" :"فرنسي",
+        "range" :" يجب ان يكون بين",
+        "yellow" :"اصفر",
+        "red" :"احمر" ,
+        "green" :"اخضر",
+        "username" :"اسم المستخدم"
+    },
+
+    "LOGIN":
+    {
+        "title" :"تسجيل الدخول ",
+        "forgetpassword" : "نسيت كلمة السر ؟" ,
+        "noaccount" :"ليس لديك حساب؟" ,
+        "signup" :"انشاء حساب" ,
+        "email" : "ايميل",
+        "validemail" :"من فضلك استخدم ايميل صحيح"
+
+    },
+
+    "SIDEMENU":
+    {
+        "home" : "الصفحة الرئيسية" ,
+        "logout" : "تسجيل الخروج",
+        "add" : "زيادة لقاء" 
+
+    },
+
+    "REGISTER":
+    {
+        "title" :"تسجيل الدخول" ,
+        "firstname" : "الاسم الاول" ,
+        "lastname" :"اسم العائلة" ,
+        "country" :"البلد" ,
+        "havaaccount" : "!لديك حساب",
+        "login" :"تسجل الان "
+        
+
+    }
+}

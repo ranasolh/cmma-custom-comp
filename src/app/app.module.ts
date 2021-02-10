@@ -17,8 +17,10 @@ import {SharedModule} from  '../app/shared.module' ;
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
+
+
 export function LanguageLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, 'assets/', '.json');
 }
 
 
@@ -38,6 +40,7 @@ export function LanguageLoader(http: HttpClient) {
     CommonModule,
     MaterialModule,
     SharedModule,
+  
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -56,6 +59,7 @@ export function LanguageLoader(http: HttpClient) {
     
      TranslateConfigService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    
   ],
 
   bootstrap: [AppComponent],

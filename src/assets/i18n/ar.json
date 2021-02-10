@@ -1,5 +1,7 @@
 {
     "HOME": {
+        "name" :"الاسم" ,
+        "currentTheme":"rtl",
         "title": "Ionic 4 Multi Language Translation",
         "text": "مرحبا كيف الحال",
         "submit" :"تم",
@@ -11,7 +13,26 @@
         "character" :"احرف" ,
         "number" :"رقم",
         "selectLanguage" :"اختر اللغة" ,
+        "user": "اسم المستخدم" ,
         "arabic" :"عربي" ,
-        "english" :"انكليزي"
+        "english" :"انكليزي",
+        "french" :"فرنسي",
+        "range" :" يجب ان يكون بين",
+        "yellow" :"اصفر",
+        "red" :"احمر" ,
+        "green" :"اسم المستخد" 
+       
+    },
+
+    "LOGIN":
+    {
+        "title" :"تسجيل الدخول ",
+        "forgetpassword" : "نسيت كلمة السر ؟" ,
+        "noaccount" :"ليس لديك حساب؟" ,
+        "signup" :"انشاء حساب" ,
+        "usernames" :"اسم المستخدم"
+        
+      
+
     }
 }

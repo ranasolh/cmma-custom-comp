@@ -1,0 +1,10 @@
+<app-ca-input 
+[placeholder]="'HOME.number' | translate"
+[type]="'number'"
+[parentFormGroup]="parentFormGroup"
+[min]="5"
+[max]="100"
+[ControlName]="'numbercontrol'"
+[(value)] ="this.value"
+ (valueChange)= "this.Inputchange($event)"
+></app-ca-input>

@@ -1,0 +1,53 @@
+{
+    "HOME": {
+        "name" :"Nom" ,
+        "title": "Ionic 4 Multi Language Translation",
+        "text": "This is random text to show translation in application",
+        "submit" :"Soumettre",
+        "cancel" :"Annuler" ,
+        "password" :"Mot de passe" ,
+        "required" :"Ce champ est requis",
+        "min" :"Ça doit être au moins  ",
+        "max" :"Il doit être inférieur à ",
+        "character" :"personnage",
+        "number" :"nombre" ,
+        "selectLanguage" :"Choisir la langue" ,
+        "arabic" :"arabe" ,
+        "english" :"Anglaise" ,
+        "french" : "française" ,
+        "range" :"Ça doit être entre",
+        "yellow" :"Jaune",
+        "red" :"rouge" ,
+        "green" :"verte",
+        "username" :"Nom d'utilisateur"
+    },
+    
+    "LOGIN":
+    {
+        "title" :"Formulaire de connexion " ,
+        "forgetpassword" : "Mot de passe oublié?" ,
+        "noaccount" :"Vous n'avez pas de compte?" ,
+        "signup" :"S'inscrire maintenant",
+        "email" : "Email",
+        "validemail" :"veuillez saisir une adresse e-mail valide"
+    },
+
+    "SIDEMENU":
+    {
+        "home" : "maison" ,
+        "logout" : "Se déconnecter",
+        "add" : "Ajouter un événement" 
+
+    },
+
+    "REGISTER":
+    {
+        "title" :"Formulaire d'inscription" ,
+        "firstname" : "Prénom" ,
+        "lastname" :"Nom de famille" ,
+        "country" :"pays" ,
+        "havaaccount" : "Avoir un compte!",
+        "login" :"S'identifier"
+
+    }
+}

@@ -1,5 +1,7 @@
 {
   "name": "cmma-custom-components",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

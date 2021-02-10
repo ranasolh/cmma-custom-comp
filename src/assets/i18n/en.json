@@ -1,5 +1,7 @@
 {
     "HOME": {
+        "name" :"name" ,
+        "currentTheme":"ltr" ,
         "title": "Ionic 4 Multi Language Translation",
         "text": "This is random text to show translation in application",
         "submit" :"Submit",
@@ -11,7 +13,27 @@
         "character" :"character",
         "number" :"number" ,
         "selectLanguage" :"select Language" ,
+        "user" :"Username",
         "arabic" :"Arabic" ,
-        "english" :"English"
+        "english" :"English" ,
+        "french" : "french" ,
+        "range" :"It must be between",
+        "yellow" :"yellow",
+        "red" :"red" ,
+        "green" :"username" 
+        
+    },
+
+    "LOGIN":
+    {
+        "title" :"Login Form" ,
+        "forgetpassword" : "Forget password?" ,
+        "noaccount" :"Donot have account ?" ,
+        "signup" :" Signup Now",
+        "usernames" :"User name"
+        
+
+      
+
     }
 }

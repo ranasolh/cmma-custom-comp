@@ -1,0 +1,35 @@
+{
+    "HOME": {
+        "name" :"Nom" ,
+        "title": "Ionic 4 Multi Language Translation",
+        "text": "This is random text to show translation in application",
+        "submit" :"Soumettre",
+        "cancel" :"Annuler" ,
+        "password" :"Mot de passe" ,
+        "required" :"Ce champ est requis",
+        "min" :"Ça doit être au moins  ",
+        "max" :"Il doit être inférieur à ",
+        "character" :"personnage",
+        "number" :"nombre" ,
+        "selectLanguage" :"Choisir la langue" ,
+        "user" :"Nom d'utilisateur" ,
+        "arabic" :"arabe" ,
+        "english" :"Anglaise" ,
+        "french" : "française" ,
+        "range" :"Ça doit être entre",
+        "yellow" :"Jaune",
+        "red" :"rouge" ,
+        "green" :"Nom d'utilisateur"
+       
+    },
+    
+    "LOGIN":
+    {
+        "title" :"Formulaire de connexion " ,
+        "forgetpassword" : "Mot de passe oublié?" ,
+        "noaccount" :"Vous n'avez pas de compte?" ,
+        "signup" :"S'inscrire maintenant" ,
+        "usernames" :"Nom d'utilisateur"
+
+    }
+}

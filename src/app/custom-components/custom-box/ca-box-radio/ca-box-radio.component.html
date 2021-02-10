@@ -1,0 +1,13 @@
+<ion-list>
+  <ion-radio-group >
+   
+
+    <ion-item *ngFor="let key of keys "  >
+      <ion-label>{{options[key] | translate }}</ion-label>
+      <ion-radio slot="start" value="{{key}}"></ion-radio>
+    </ion-item>
+
+   
+  </ion-radio-group>
+</ion-list>
+

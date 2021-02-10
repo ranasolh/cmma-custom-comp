@@ -1,0 +1,45 @@
+#mainlogo{
+   
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    margin-left:10px;
+    margin-right:10px;
+    
+}
+
+i
+{
+ 
+    width:30px;
+    height:30px;
+    border-radius:50%;
+   
+}
+
+
+.divoption
+{  
+    background: linear-gradient(to right,#cac7c3,#181010) !important;
+    width:200px;
+    
+}
+
+label
+{
+    margin-left:10px;
+    margin-right:10px;
+    color: red;
+}
+
+
+.container-item
+{
+    flex-direction:column;
+    display:flex; 
+    justify-content:center;
+     align-items:center;
+    //  width:100%;
+     flex-wrap:wrap;
+}
+

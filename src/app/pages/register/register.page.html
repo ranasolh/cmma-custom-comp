@@ -1,0 +1,36 @@
+
+ 
+  <body>
+    <div class="bg-img">
+      <div class="content">
+        <header>{{'REGISTER.title' | translate }}</header>
+        <form [formGroup]="formGroupRegister">
+          <div class="field">
+            <app-ca-input-firstname [parentFormGroup]="formGroupRegister"></app-ca-input-firstname>
+          
+          </div>
+          <div class="field">
+            <app-ca-input-lastname [parentFormGroup]="formGroupRegister"></app-ca-input-lastname>
+          
+          </div>
+          <div class="field">
+            <app-ca-input-email [parentFormGroup]="formGroupRegister"></app-ca-input-email>
+          
+          </div>
+          <div class="field ">
+            <app-ca-input-password [parentFormGroup]="formGroupRegister" ></app-ca-input-password>
+          </div>
+         
+          <div  >
+                 <app-ca-button-submit routerLink="/login"></app-ca-button-submit>
+          </div>
+    </form>
+
+          <div class="signup">
+                {{'REGISTER.havaaccount' | translate }}
+                 <a href="../login">{{'REGISTER.login' | translate }}</a>
+         </div>
+    </div>
+ </div>
+</body>
+

@@ -1,0 +1,9 @@
+<app-ca-input 
+[placeholder]= "'LOGIN.email' | translate"
+[type]="'email'"
+[parentFormGroup]="parentFormGroup"
+
+[pattern]="'^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'"
+[isrequired]="true"
+[ControlName]="'email'"
+></app-ca-input>

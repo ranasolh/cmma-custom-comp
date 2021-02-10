@@ -1,0 +1,18 @@
+<div class="container-item">
+    <div *ngIf="lonpressed" class="divoption" >
+        <ion-item *ngFor="let option of options ; index as i">
+            <i class="{{option}}"> </i>
+            <label>  {{labels[i] | translate}}</label>
+        </ion-item>
+    </div>
+<i class="{{options[index]}}"  id="mainlogo"   ion-long-press (click)="nextone()" (press)="showOptions()"   (longPressed)="showOptions()" (pressEnded)="released()"></i>
+
+
+<!-- <div *ngIf="lonpressed" class="divoption" >
+    <ion-item *ngFor="let option of options ; index as i">
+        <i class="{{ option}}"   ></i>
+        <label>  {{labels[i] | translate}}</label>
+    </ion-item>
+</div> -->
+
+</div>

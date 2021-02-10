@@ -1,51 +1,53 @@
 
-<ion-header>
+<!-- <ion-header>
    
     
 </ion-header>
 
 
-<ion-content>
+<ion-content >
+    <ion-card >  
 <form [formGroup]="formGroup">
-
-<ion-grid>
+   
+<ion-grid >
 
     <ion-row>
-        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
-            
-          
-
-            <app-custom-select ngDefaultControl 
+        <ion-col  >
+             <app-custom-select ngDefaultControl 
             [(optionselected)]="selectedLanguage"
             (optionselectedChange)= "langchange($event)" [options]="options"
             
             ></app-custom-select>
+       </ion-col>
+    </ion-row>
 
 
+
+
+
+    <ion-row>
+        <ion-col >
            
 
-        </ion-col>
-       
-      
-        
-    </ion-row>
-    <ion-row>
-        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
-            <app-custom-autocomplete ngDefaultControl 
-            [(default)] ="this.selectedLanguage"
-          (defaultChange)= "langchange($event)" [options]="options"
          
-          
-          ></app-custom-autocomplete>
-
+          <app-custom-autocomplete ngDefaultControl 
+          [(default)] ="this.selectedLanguage"
+        (defaultChange)= "langchange($event)" [options]="options"
+       
+        
+        ></app-custom-autocomplete>
       </ion-col>
 
     </ion-row>
    
     
-    <ion-row>
-        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
-           <app-password-input [parentFormGroup]="formGroup"></app-password-input>
+    <ion-row  class="appclasses">
+        <ion-col  class="appclasses" >
+            <app-password-input [parentFormGroup]="formGroup"  class="appclasses"
+          [(value)] ="this.passwordvalue"
+          (valueChange)= "this.passwordchanged($event)"
+          
+          ></app-password-input>
            
         </ion-col>
       
@@ -54,14 +56,33 @@
 
 
     <ion-row>
-        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
-            <app-number-input  [parentFormGroup]="formGroup"></app-number-input>
+        <ion-col >
+            <app-number-input  [parentFormGroup]="formGroup"
+            [(value)] ="this.numbervalue"
+            (valueChange)= "this.numberchanged($event)"
+            
+            ></app-number-input>
            
         </ion-col> 
     </ion-row>
 
     <ion-row>
-        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
+        <ion-col  >
+            <app-ca-input 
+            [placeholder]="'HOME.name' | translate"
+            [type]="'text'"
+            [parentFormGroup]="formGroup"
+            [minLength]="5"
+            [maxLength]="10"
+            [icon]="'person'"
+          
+            ></app-ca-input>
+            
+        </ion-col> 
+    </ion-row>
+
+    <ion-row>
+        <ion-col  >
             
             <app-cancel-button></app-cancel-button>
            
@@ -69,16 +90,65 @@
     </ion-row>
 
     <ion-row>
-        <ion-col offset-lg="4" size-lg="3" size-sm="5" offset-sm="4" >
+        <ion-col  >
             
             <app-submit-button></app-submit-button>
            
         </ion-col> 
     </ion-row>
 
+    <ion-row>
+        <ion-col  >
+            
+            <app-custom-radiobox [options]="optionsbox"> </app-custom-radiobox>
+            <app-custom-checkbox [options]="optionsbox"></app-custom-checkbox>
+            <app-custom-map></app-custom-map>
+           
+        </ion-col> 
+    </ion-row>
+   
+
 
    
 </ion-grid>
+
 </form>
+    </ion-card>
+</ion-content> -->
+
+
+<!-- <ion-content>
+     <app-custom-map> </app-custom-map> 
+
+    <app-calender [title]="'daily meeting'"  [times]="5" [style]="'daily'"></app-calender>
+</ion-content> -->
+
+
+
+<ion-content>
+    <!-- <div class="main-footer">
+       <div class="botton-footer">
+        <app-ca-switcher-languages></app-ca-switcher-languages>
+        <app-ca-switcher-languages></app-ca-switcher-languages>
+    </div>
+   </div> -->
+        <!-- <app-custom-map> </app-custom-map>  -->
+    <app-ca-map></app-ca-map>
+    <!-- <app-ca-calender></app-ca-calender> -->
+   <!-- <app-ca-box-radio [options]="optionsbox"></app-ca-box-radio>
+   <app-ca-box-check [options]="optionsbox"></app-ca-box-check> -->
+   <!-- <app-ca-select-autocomplete  ngDefaultControl 
+   [(default)] ="this.selectedLanguage"
+ (defaultChange)= "langchange($event)" [options]="options"
+   
+   ></app-ca-select-autocomplete>
+
+   <app-ca-select-dropdown ngDefaultControl 
+   [(optionselected)]="selectedLanguage"
+   (optionselectedChange)= "langchange($event)" [options]="options"
+   
+   ></app-ca-select-dropdown> -->
+
+   <!-- <app-ca-dropdown-languages></app-ca-dropdown-languages> -->
 
 </ion-content>

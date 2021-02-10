@@ -1,0 +1,44 @@
+
+ 
+  <body>
+    <div class="bg-img">
+      <div class="content">
+        <header>{{'LOGIN.title' | translate }}</header>
+        <form [formGroup]="formGroup">
+          <div class="field">
+            <app-ca-input-email [parentFormGroup]="formGroup"></app-ca-input-email>
+            <!-- <app-ca-autocomplete-countries></app-ca-autocomplete-countries> -->
+          </div>
+          <div class="field space">
+            <app-ca-input-password [parentFormGroup]="formGroup" ></app-ca-input-password>
+          </div>
+          <!-- <div class="pass">
+                <a href="#">{{'LOGIN.forgetpassword' | translate }}</a>
+          </div> -->
+          <div class="margin-login">
+                 <app-ca-button-submit routerLink="/home"></app-ca-button-submit>
+          </div>
+        </form>
+
+          <div class="signup">
+                {{'LOGIN.noaccount' | translate }}
+                 <a href="../register">{{'LOGIN.signup' | translate }}</a>
+         </div>
+         <div class="main-footer">
+          <div class="botton-footer">
+           <app-ca-switcher-languages ></app-ca-switcher-languages>
+           <app-ca-switcher-credentials ></app-ca-switcher-credentials>
+        </div>
+        </div>
+    </div>
+
+    
+ </div>
+ <!-- <div class="main-footer">
+  <div class="botton-footer">
+   <app-ca-switcher-languages></app-ca-switcher-languages>
+   <app-ca-switcher-credentials></app-ca-switcher-credentials>
+</div>
+</div> -->
+</body>
+

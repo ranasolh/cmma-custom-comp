@@ -1,10 +1,43 @@
-
-<app-base-input
- [placeholder]="placeholder" 
- [type]="type" 
- [parentFormGroup]="parentFormGroup" 
- [min]="min"
- [max]="max"
- >
-
-</app-base-input>
+<!-- <div [formGroup]="parentFormGroup"> -->
+    <div>
+        <ion-item [formGroup]="parentFormGroup"  class="appclasses">
+        <ion-icon 
+        [name]="ismyTextFieldType ? 'eye-off' : 'eye'"
+        *ngIf="this.type=='password'"
+        (click)="togglemyPasswordFieldType()"   
+        >
+      </ion-icon>
+      
+      
+      
+        <ion-label position="floating" > {{placeholder}}</ion-label>
+        
+        
+        <ion-input   id="{{type}}"  type="{{type}}"   formControlName="{{ControlName}}" 
+        onclick="this.type=='password'?this.value='':this.value=this.value ;" #input
+        (change)="Inputchange(input.value)"
+        [type]=" ismyTextFieldType && this.type =='password' ? 'text' : this.type "
+         ></ion-input>
+       
+       
+       
+        
+        <!-- <ion-icon
+          [name]="ismyTextFieldType ? 'eye-off' : 'eye'"
+          slot="end" *ngIf="this.type=='password'"
+          (click)="togglemyPasswordFieldType()"   
+        >
+        </ion-icon> -->
+      
+      
+      
+        
+      </ion-item>
+      <p *ngIf=' name.errors?.required && name.touched '>{{'HOME.required' | translate}}</p>
+         
+      <p *ngIf="name.errors?.minlength" >{{'HOME.min' | translate}}{{minLength}} {{'HOME.character' | translate}}</p>
+      <p *ngIf="name.errors?.maxlength" >{{'HOME.max' | translate}} {{maxLength}} {{'HOME.character' | translate}}</p>
+      <p *ngIf="name.errors?.min" >{{'HOME.range' | translate}} {{min}} - {{max}} </p>
+      <p *ngIf="name.errors?.max" >{{'HOME.range' | translate}} {{min}} - {{max}}</p>
+      <p *ngIf="name.errors?.pattern" >{{'LOGIN.validemail' | translate}}</p>
+      </div>
