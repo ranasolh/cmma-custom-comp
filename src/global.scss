@@ -51,10 +51,9 @@ ion-item {
 {
   position: fixed;
   bottom:10px;
+  left:1px;
   width:100%;
   display:flex; 
-  
-  
   justify-content:center;
   align-items:flex-end;
  
@@ -63,24 +62,41 @@ ion-item {
 
   .botton-footer
 {
-    
      flex-direction:row;
      display:flex; 
      justify-content:center;
      align-items:flex-end;
-    //  width:100%;
-     flex-wrap:wrap;
-    
+  
+}
 
+.child-left
+{
+   
+    text-align:center;
+    width:50%;
+}
+
+.child-right
+{
+   
+    text-align:center;
+     justify-content:center;
+      width:50%;
 }
 
 
 
 
-.foregetpassword {
-  // background-image: url('./assets/forgetpassword.png') !important;
 
-  background: url('./assets/Arabic.jpg');
+
+
+.foregetpassword {
+ 
+  //  background: linear-gradient(to right,#38332e,#DCDCDC) ;
+ 
+    //  --background-image: url("./assets/password-reset.svg") !important;
+
+      background-image: url(./assets/pass.svg);
 }
 
 

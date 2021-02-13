@@ -6,7 +6,7 @@
         </ion-item>
     </div>
 <i class="{{options[index]}}"  id="mainlogo"   ion-long-press (click)="nextone()" (press)="showOptions()"   (longPressed)="showOptions()" (pressEnded)="released()"></i>
-
+<app-ca-label [placeholder]="label"></app-ca-label>
 
 <!-- <div *ngIf="lonpressed" class="divoption" >
     <ion-item *ngFor="let option of options ; index as i">

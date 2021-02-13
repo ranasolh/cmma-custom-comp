@@ -4,6 +4,7 @@
     <div class="bg-img">
       <div class="content">
         <header>{{'LOGIN.title' | translate }}</header>
+       <!-- <header> <app-ca-label [placeholder]="'LOGIN.title'"></app-ca-label>  </header> -->
         <form [formGroup]="formGroup">
           <div class="field">
             <app-ca-input-email [parentFormGroup]="formGroup"></app-ca-input-email>
@@ -24,11 +25,11 @@
                 {{'LOGIN.noaccount' | translate }}
                  <a href="../register">{{'LOGIN.signup' | translate }}</a>
          </div>
-         <div class="main-footer">
-          <div class="botton-footer">
-           <app-ca-switcher-languages ></app-ca-switcher-languages>
-           <app-ca-switcher-credentials ></app-ca-switcher-credentials>
-        </div>
+        <div class="main-footer">
+         
+          <div class="child-left">  <app-ca-switcher-languages  ></app-ca-switcher-languages>  </div>
+          <div class="child-right">  <app-ca-switcher-credentials ></app-ca-switcher-credentials> </div>
+       
         </div>
     </div>
 

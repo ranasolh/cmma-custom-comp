@@ -11,6 +11,7 @@ export class CaSelectSwitcherComponent implements OnInit {
   @Input() optionselected ;
   @Input() options:any;
   @Input() labels:any;
+  @Input() label:string;
   lonpressed=false;
   index=0;
   constructor() { }
